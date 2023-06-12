@@ -3,7 +3,7 @@ import random
 from tkinter import *
 from PIL import Image, ImageTk
 BACKGROUND_COLOR = "#B1DDC6"
-new_word = {}
+new_word = ''
 
 timer = None
 try:
@@ -19,7 +19,7 @@ finally:
 def next_card_known():
     global data, data_list  
     check = data.index[data['French'] == new_word['French']].tolist()
-            
+
     data = data.drop(int(check[0]))
     data.to_csv('data/words_to_learn.csv', index=False)
     data_list.remove(new_word)
