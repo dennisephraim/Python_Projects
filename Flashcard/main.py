@@ -19,10 +19,8 @@ finally:
 def next_card_known():
     global data, data_list  
     check = data.index[data['French'] == new_word['French']].tolist()
-    print(check)
-    
+            
     data = data.drop(int(check[0]))
-    print(len(data))
     data.to_csv('data/words_to_learn.csv', index=False)
     data_list.remove(new_word)
     next_card()
@@ -73,7 +71,7 @@ correct_button = Button(image=cbutton_img, highlightthickness=0, command=next_ca
 correct_button.grid(column=1, row=1)
 
 xbutton_img = PhotoImage(file= 'images\wrong.png')
-wrong_button = Button(image=xbutton_img, highlightthickness=0, command=next_card())
+wrong_button = Button(image=xbutton_img, highlightthickness=0, command=next_card)
 wrong_button.grid(column=0, row=1)
 
 next_card()
