@@ -73,7 +73,7 @@ correct_button = Button(image=cbutton_img, highlightthickness=0, command=next_ca
 correct_button.grid(column=1, row=1)
 
 xbutton_img = PhotoImage(file= 'images\wrong.png')
-wrong_button = Button(image=xbutton_img, highlightthickness=0, command=next_card())
+wrong_button = Button(image=xbutton_img, highlightthickness=0, command=next_card)
 wrong_button.grid(column=0, row=1)
 
 next_card()
