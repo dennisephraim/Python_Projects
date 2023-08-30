@@ -28,7 +28,7 @@ url_news = 'https://newsapi.org/v2/top-headlines'
 
 response = requests.get(url=url_alpha, params=parameters_alpha)
 data = response.json()
-
+print(data)
 previous_week_days = []
 today = datetime.today()
 
