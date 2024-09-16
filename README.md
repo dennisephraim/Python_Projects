@@ -15,7 +15,7 @@ A console-based word guessing game where the player has a limited number of gues
 
 ### Number Guessing Game
 A simple game where the player tries to guess a randomly generated number within a specific range.
-
+\
 
 There are many more projects and games 
 More projects will be added over time as I continue building and improving them.
